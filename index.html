@@ -6,11 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Week 2 | Task</title>
 
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
     <!-- Main CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <h1>Hello world</h1>
+
+    <div class="container">
+        
+        <!-- position-relative  -->
+        <div class="overflow-hidden upper-div">
+            <!-- Top SVG -->
+            <svg class="position-absolute top-svg" width="978" height="978" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient x1="50%" y1=".779%" x2="50%" y2="100%" id="a"><stop stop-color="#0989B4" stop-opacity="0" offset="0%"/><stop stop-color="#53FFEE" offset="99.94%"/></linearGradient></defs><ellipse fill="url(#a)" transform="rotate(-135 489 489)" cx="489" cy="489" rx="489" ry="488" fill-rule="evenodd" opacity=".5"/></svg>
+        </div>
+
+        <div class="position-relative overflow-hidden bottom-div">
+            <!-- Bottom SVG -->
+            <svg class="position-absolute bot-svg" width="978" height="978" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient x1="50%" y1=".779%" x2="50%" y2="100%" id="a"><stop stop-color="#0989B4" stop-opacity="0" offset="0%"/><stop stop-color="#53FFEE" offset="99.94%"/></linearGradient></defs><ellipse fill="url(#a)" transform="scale(1 -1) rotate(45 1669.55 0)" cx="489" cy="489" rx="489" ry="488" fill-rule="evenodd" opacity=".25"/></svg>
+        </div>
+
+        <div class="card-container d-flex justify-content-center align-items-center position-absolute w-100">
+            <div class="card">
+                <div class="bg-pattern"></div>
+                <div id="img-victor" class="position-absolute d-flex justify-content-center">
+                    <img id="victor" src="assets/images/image-victor.jpg" alt="Victor" width="96" height="96">
+                </div>
+
+                <div class="name-age justify-content-center align-items-center">
+                    <h1>Victor Crest</h1>
+                    <p>26</p>
+                </div>
+                
+                <div class="city">
+                    <p>London</p>
+                </div>
+                <hr/>
+
+                <div id="data" class="d-flex align-items-center">
+                    <div class="data">
+                        <h3>80K</h3>
+                        <small>Followers</small>
+                    </div>
+                    <div class="data">
+                        <h3>803K</h3>
+                        <small>Likes</small>
+                    </div>
+                    <div class="data">
+                        <h3>1.4K</h3>
+                        <small>Photos</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <script src="assets/js/main.js"></script>
 </body>
 </html>
