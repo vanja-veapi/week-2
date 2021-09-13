@@ -256,7 +256,7 @@ small
     }
     .name-age
     {
-        margin-top: 16%;
+        margin-top: 11vh;
     }
     .namge-age > h1
     {
@@ -265,11 +265,12 @@ small
     .name-age > p
     {
         margin-top: 0;
-        font-size: 30px;
+        font-size: 18px;
+        margin-left: 15px;
     }
     #data
     {
-        height: 18vh;
+        height: 21vh;
     }
 }
 
@@ -287,25 +288,37 @@ small
         left: -170%;
     }    
 }
-@media screen and (max-width: 360px) 
+@media screen and (max-width: 365px) 
 {
     .top-svg
     {
         top: -100%;
-        left: -196%;
+        left: -230%;
     }
     .card
     {
-        width: 300px;
+        width: 265px;
+        height: 370px;
     }
     #data
     {
         height: 11vh;
     }
-    .name-age > h1 { font-size: 23px;}  
-    .name-age > p { font-size: 27px;}
+    .name-age > h1 { font-size: 20px;}  
+    .name-age > p { font-size: 18px;}
+    .name-age > p 
+    {
+        margin-left: 10px;
+    }
     .name-age
     {
         margin-top: 26%;
     }   
+}
+@media screen and (max-width: 310px)
+{
+    .top-svg
+    {
+        left: -278%;
+    }
 }
