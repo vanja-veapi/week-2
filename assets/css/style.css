@@ -64,7 +64,7 @@
     background-color: #fff;
     z-index: 99;
     border-radius: 20px;
-    box-shadow: 0 0 900px #2d3248;
+    box-shadow: 0 0 50px rgba(45, 50, 72, 0.4);
 }
 .card > img
 {
