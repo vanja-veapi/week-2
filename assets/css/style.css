@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@500;600&display=swap');
 *
 {
     margin: 0;
@@ -199,7 +200,7 @@ small
     }
     #data
     {
-        height: 16vh;
+        height: 11vh;
     }
 }
 @media screen and (max-width: 1300px)
@@ -229,11 +230,20 @@ small
         width: 350px;
     }  
 }
+@media screen and (max-width: 820px)
+{
+    .top-svg
+    {
+        left: -80%;
+        bottom: 29%;
+    }    
+}
 @media screen and (max-width: 678px) 
 {
     .top-svg
     {
-        left: -95%;
+        left: -80%;
+        bottom: 60%;
     }
     .bot-svg
     {
@@ -242,8 +252,7 @@ small
     .card
     {
         width: 350px;
-        height: 490x;
-
+        height: auto;
     }
     #img-victor
     {
@@ -256,7 +265,7 @@ small
     }
     .name-age
     {
-        margin-top: 11vh;
+        margin-top: 9vh;
     }
     .namge-age > h1
     {
@@ -270,7 +279,7 @@ small
     }
     #data
     {
-        height: 21vh;
+        height: 12vh;
     }
 }
 
@@ -297,7 +306,7 @@ small
     }
     .card
     {
-        width: 265px;
+        width: 280px;
         height: 370px;
     }
     #data
@@ -315,10 +324,11 @@ small
         margin-top: 26%;
     }   
 }
-@media screen and (max-width: 310px)
+@media screen and (max-width: 350px)
 {
     .top-svg
     {
-        left: -278%;
+        left: -220%;
+        top: -79%;
     }
 }
