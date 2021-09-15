@@ -1,11 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 *
 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;;
 }
-h1
+:root
 {
-    color: blue;
-    font-family: Arial, Helvetica, sans-serif;
+   --main-color: #19a2ae;
+   --gray-color: #969696;
+}
+
+.container
+{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--main-color);
+}
+.w-100 { width: 100%; }
+.position-absolute { position: absolute; }
+.position-relative { position: relative; }
+.overflow-hidden { overflow: hidden; }
+.d-flex {display: flex; }
+.justify-content-center {justify-content: center;}
+.align-items-center {align-items: center;}
+
+.top-svg
+{
+    bottom: 40%;
+    left: -5%;
+}
+.bot-svg
+{
+    top: 23%;
+    left: 60%;
+}
+.bottom-div,
+.upper-div
+{
+    width: 100%;
+    height: 50vh;
+}
+.card-container
+{
+    top: 0;
+    height: 100vh;
+}
+.bg-pattern
+{
+    border-radius: 20px 20px 0 0;
+    width: inherit;
+    height: 200px;
+    background-image: url(../images/bg-pattern-card.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card
+{
+    position: relative;
+    width: 530px; /* On image card width is 350px*/
+    height: 550px; /* On image card height is 375px*/
+    background-color: #fff;
+    z-index: 99;
+    border-radius: 20px;
+    box-shadow: 0 0 50px rgba(45, 50, 72, 0.4);
+}
+.card > img
+{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+#img-victor
+{
+    width: 100%;
+    height: 96px;
+    top: 24%;
+    /* background-image: url(../images/image-victor.jpg); */
+    /* background-position: center;
+    background-repeat: no-repeat; */
+}
+#victor
+{
+    width: 140px;
+    height: 140px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+}
+.name-age
+{
+    display: flex;
+    margin-top: 20%;
+}
+.name-age > p
+{
+    font-size: 32px;
+    margin-left: 20px;
+    margin-top: 3px;
+    color: var(--gray-color);
+}
+.city > p
+{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 25px;
+    color: var(--gray-color);
+}
+.city
+{
+    margin-bottom: 7%;
+}
+hr
+{
+    margin-top: 15%;
+    width: 100%;
+    margin: 0 auto;
+    color: rgba(0, 0, 0, 0.2);
+}
+#data
+{
+    height: 12vh;
+    justify-content: space-around;
+}
+#data h3
+{
+    font-size: 25px;
+    text-align: center;
+}
+small
+{
+    display: inherit;
+    text-align: center;
+    color: var(--gray-color);
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+@media screen and (max-width: 1500px)
+{
+    .top-svg
+    {
+        left: -15%;
+    }
+}
+
+/* Bilo 1400px */
+@media screen and (max-width: 1440px)
+{
+    .top-svg
+    {
+        /* Ugasio position relative */
+        /* Oba 40% */
+        /* left: -23%; 
+        bottom: -60%; */
+
+        /* IZMJENA */
+        /* left: -27%;
+        bottom: 20%; */
+        left: -20%;
+        bottom: 37%;
+    }
+    .bot-svg
+    {
+        left: 45%;
+        top: 10%;
+    }
+    .card
+    {
+        width: 370px;
+        height: 400px;
+    }
+    #img-victor
+    {
+        top: 22%;
+    }
+    #victor
+    {
+        border: 7px solid #fff;
+        height: 110px;
+        width: 110px;
+    }
+    .name-age > h1, .name-age > p, .city > p, #data h3 
+    {
+        font-size: 18px;
+    }
+    .city p
+    {
+        margin-top: 7px;
+    }
+    .name-age
+    {
+        margin-top: 18%;
+    }
+    .bg-pattern
+    {
+        height: 150px;
+    }
+    small
+    {
+        font-size: 11px;
+        margin-top: 7px;
+    }
+    #data
+    {
+        height: 11vh;
+    }
+}
+@media screen and (max-width: 1300px)
+{
+    .top-svg
+    {
+        left: -40%;
+        bottom: 16%;
+    }
+    .bot-svg
+    {
+        left: 45%;
+    }    
+}
+
+@media screen and (max-width: 1100px) 
+{
+    .top-svg
+    {
+        left: -55%;
+    }  
+}
+@media screen and (max-width: 1000px) 
+{
+    .card
+    {
+        width: 350px;
+    }  
+}
+@media screen and (max-width: 820px)
+{
+    .top-svg
+    {
+        left: -80%;
+        bottom: 29%;
+    }    
+}
+@media screen and (max-width: 678px) 
+{
+    .top-svg
+    {
+        left: -80%;
+        bottom: 60%;
+    }
+    .bot-svg
+    {
+        left: 35%;
+    }
+    .card
+    {
+        width: 350px;
+        height: auto;
+    }
+    #img-victor
+    {
+        top: 27%;
+    }
+    #victor
+    {
+        width: 100px;
+        height: 100px;
+    }
+    .name-age
+    {
+        margin-top: 9vh;
+    }
+    .namge-age > h1
+    {
+        font-size: 25px;
+    }
+    .name-age > p
+    {
+        margin-top: 0;
+        font-size: 18px;
+        margin-left: 15px;
+    }
+    #data
+    {
+        height: 12vh;
+    }
+}
+
+@media screen and (max-width: 560px)
+{
+    .top-svg
+    {
+        left: -130%;
+    }    
+}
+@media screen and (max-width: 448px) 
+{
+    .top-svg
+    {
+        left: -170%;
+    }    
+}
+@media screen and (max-width: 375px) 
+{
+    .top-svg
+    {
+        top: -87%;
+        left: -200%;
+    }
+    .bot-svg
+    {
+        left: 38%;
+        top: -18%;
+    }
+    .card
+    {
+        width: 327px;
+        height: auto;
+    }
+    #data
+    {
+        height: 11vh;
+    }
+    .name-age > h1 { font-size: 20px;}  
+    .name-age > p { font-size: 18px;}
+    .name-age > p 
+    {
+        margin-left: 10px;
+    }
+    .name-age
+    {
+        margin-top: 26%;
+    }   
+}
+@media screen and (max-height: 375px) and (orientation: landscape)
+{
+    .card
+    {
+        height: auto;
+    }
+    .name-age
+    {
+        margin-top: 14%;
+    }
+    .bg-pattern
+    {
+        height: 125px;
+    }
+    #data
+    {
+        height: 14vh;
+    }
+}
+@media screen and (max-width: 350px)
+{
+    .top-svg
+    {
+        left: -208%;
+        top: -57%;
+    }
+    .bg-pattern
+    {
+        height: 140px;
+    }
+    #img-victor
+    {
+        top: 22%;
+    }
+    .name-age
+    {
+        margin-top: 21%;
+    }
+    .city
+    {
+        margin-bottom: 9%;
+    }
+    .card
+    {
+        width: 240px;
+    }
+}
+@media screen and (max-width: 326px)
+{
+    .top-svg
+    {
+        left: -280%
+    }    
 }
