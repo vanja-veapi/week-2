@@ -375,4 +375,15 @@ small
     {
         margin-bottom: 9%;
     }
+    .card
+    {
+        width: 240px;
+    }
+}
+@media screen and (max-width: 326px)
+{
+    .top-svg
+    {
+        left: -280%
+    }    
 }
