@@ -7,6 +7,11 @@ The designs were created to the following widths:
 - Mobile: 375px
 - Desktop: 1440px
 
+
+wrapper -> width treba da bude width: 85%; za mobilne velicine
+.footer p > font-weight 600 za 1440px
+Verified graduated = hsla(217, 19%, 35%, 0.5);
+review paragph = hsla(217, 19%, 35%, 0.7);
 ## Colors
 
 ### Primary

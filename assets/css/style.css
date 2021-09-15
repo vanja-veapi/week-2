@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 *
 {
     margin: 0;
@@ -154,8 +154,12 @@ small
         /* Oba 40% */
         /* left: -23%; 
         bottom: -60%; */
-        left: -27%;
-        bottom: 20%;
+
+        /* IZMJENA */
+        /* left: -27%;
+        bottom: 20%; */
+        left: -20%;
+        bottom: 37%;
     }
     .bot-svg
     {
@@ -297,17 +301,22 @@ small
         left: -170%;
     }    
 }
-@media screen and (max-width: 365px) 
+@media screen and (max-width: 375px) 
 {
     .top-svg
     {
-        top: -100%;
-        left: -230%;
+        top: -87%;
+        left: -200%;
+    }
+    .bot-svg
+    {
+        left: 38%;
+        top: -18%;
     }
     .card
     {
-        width: 280px;
-        height: 370px;
+        width: 327px;
+        height: auto;
     }
     #data
     {
@@ -324,11 +333,46 @@ small
         margin-top: 26%;
     }   
 }
+@media screen and (max-height: 375px) and (orientation: landscape)
+{
+    .card
+    {
+        height: auto;
+    }
+    .name-age
+    {
+        margin-top: 14%;
+    }
+    .bg-pattern
+    {
+        height: 125px;
+    }
+    #data
+    {
+        height: 14vh;
+    }
+}
 @media screen and (max-width: 350px)
 {
     .top-svg
     {
-        left: -220%;
-        top: -79%;
+        left: -208%;
+        top: -57%;
+    }
+    .bg-pattern
+    {
+        height: 140px;
+    }
+    #img-victor
+    {
+        top: 22%;
+    }
+    .name-age
+    {
+        margin-top: 21%;
+    }
+    .city
+    {
+        margin-bottom: 9%;
     }
 }
